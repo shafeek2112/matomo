@@ -317,7 +317,7 @@ class TrackerCodeGenerator
     * @param string|array|null $urls Hostname
     * @return string|array
     */
-    private function checkRemoveWwwIfexists($urls) 
+    public function checkRemoveWwwIfexists($urls) 
     {
         //If the parameter is array, iterate over the array and remove the 'www.'
         if(is_array($urls)) {
@@ -336,7 +336,7 @@ class TrackerCodeGenerator
     * @param string|null $url Hostname
     * @return string
     */
-    private function removeWww($url) 
+    public function removeWww($url) 
     {
         return (substr(trim($url), 0, 4) === 'www.') ? substr($url, 4) : $url;
     }
