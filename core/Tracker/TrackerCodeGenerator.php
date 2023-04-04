@@ -294,15 +294,51 @@ class TrackerCodeGenerator
                 $websiteHosts[] = $url;
             }
         }
+
+        //Check if the domain consists of 'www.'
+        $firstHost = $this->checkRemoveWwwIfexists($firstHost);
+
         $options = '';
         if ($mergeSubdomains && !empty($firstHost)) {
             $options .= '  _paq.push(["setCookieDomain", "*.' . $firstHost . '"]);' . "\n";
         }
         if ($mergeAliasUrls && !empty($websiteHosts)) {
+            //Check if the domain consists of 'www.'
+            $websiteHosts = $this->checkRemoveWwwIfexists($websiteHosts);
+
             $urls = '["*.' . implode('","*.', $websiteHosts) . '"]';
             $options .= '  _paq.push(["setDomains", ' . $urls . ']);' . "\n";
         }
         return $options;
+    }
+
+    /**
+    * Check if the host consists of 'www.', if its exists, remove it. It handles both array & string as a parameter.
+    * @param string|array|null $urls Hostname
+    * @return string|array
+    */
+    private function checkRemoveWwwIfexists($urls) 
+    {
+        //If the parameter is array, iterate over the array and remove the 'www.'
+        if(is_array($urls)) {
+            $urlWithoutWww = [];
+            foreach ($urls as $url) {
+                $urlWithoutWww[] = $this->removeWww($url);
+            }
+        } else {
+            $urlWithoutWww = $this->removeWww($urls);
+        }
+        return $urlWithoutWww;
+    }
+    
+    /**
+    * Remove www from the url
+    * @param string|null $url Hostname
+    * @return string
+    */
+    private function removeWww($url) 
+    {
+        return (substr(trim($url), 0, 4) === 'www.') ? substr($url, 4) : $url;
     }
 
     /**
