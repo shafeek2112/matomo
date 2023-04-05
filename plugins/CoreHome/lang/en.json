@@ -130,7 +130,7 @@
         "StartDate": "Start Date",
         "EndDate": "End Date",
         "AboutMatomo": "About Matomo",
-        "CurrentWebsiteTime": "Current Website Time",
+        "CurrentWebsiteTime": "Current local time in website's timezone",
         "LocalTime": "Local Time",
         "WebsiteTime": "Website Time"
     }
