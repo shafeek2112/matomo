@@ -89,7 +89,7 @@
 
       <!-- group page titles by site domain -->
       <div id="jsTrackGroupByDomainInlineHelp" class="inline-help-node">
-        {{ translate('CoreAdminHome_JSTracking_GroupPageTitlesByDomainDesc1', currentSiteHost) }}
+        {{ translate('CoreAdminHome_JSTracking_GroupPageTitlesByDomainDesc1', currentSiteHostWithoutWww) }}
       </div>
 
       <Field
