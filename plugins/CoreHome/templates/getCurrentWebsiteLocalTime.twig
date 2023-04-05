@@ -1,0 +1,30 @@
+<div id='CurrentLocalTime'>
+    <div style="padding:8px;">
+        <div id="current-local-time-widget">
+            <div id="website-time-container" class="current-time-block" >{{ 'CoreHome_WebsiteTime'|translate }}<span id="website-time"></span></div>
+            <div id="local-time-container" class="current-time-block" style="display:none;">{{ 'CoreHome_LocalTime'|translate }}<span id="local-time"></span></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">$(document).ready(function () {require('piwik/CoreHome').updateTime('{{timeZone}}');});</script>
+
+{# ----- Vue ----- #}
+{# <script type="text/javascript">$(document).ready(function () {require('piwik/CoreHome').updateTime});</script> #}
+{# <script type="text/javascript">$(document).ready(function () {require('piwik/Live').updateTime('{{ timeZone }}');});</script> #}
+
+{# <div id='CurrentLocalTime'>
+    <div style="padding:8px;">
+        <div id="current-local-time-widget">
+            <div id="local-time"></div>
+            <div id="website-time"></div>
+        </div>
+    </div>
+</div>
+
+{% block content %}
+
+    <div vue-directive="CoreHome.CurrentLocalTime"></div>
+
+{% endblock %}
+ #}

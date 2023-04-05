@@ -156,6 +156,7 @@ class CoreHome extends \Piwik\Plugin
         $stylesheets[] = "plugins/CoreHome/vue/src/FieldArray/FieldArray.less";
         $stylesheets[] = "plugins/CoreHome/vue/src/Comparisons/Comparisons.less";
         $stylesheets[] = "plugins/CoreHome/stylesheets/vue-transitions.less";
+        $stylesheets[] = "plugins/CoreHome/stylesheets/currentTime.less";
     }
 
     public function getJsFiles(&$jsFiles)
@@ -186,6 +187,7 @@ class CoreHome extends \Piwik\Plugin
         $jsFiles[] = "plugins/CoreHome/javascripts/notification.js";
         $jsFiles[] = "plugins/CoreHome/javascripts/numberFormatter.js";
         $jsFiles[] = "plugins/CoreHome/javascripts/noreferrer.js";
+        $jsFiles[] = "plugins/CoreHome/javascripts/currentWebsiteTime.js";
 
         // we have to load these CorePluginsAdmin files here. If we loaded them in CorePluginsAdmin,
         // there would be JS errors as CorePluginsAdmin is loaded first. Meaning it is loaded before
@@ -386,6 +388,8 @@ class CoreHome extends \Piwik\Plugin
         $translationKeys[] = 'General_PiwikXIsAvailablePleaseUpdateNow';
         $translationKeys[] = 'General_PiwikXIsAvailablePleaseNotifyPiwikAdmin';
         $translationKeys[] = 'General_YouAreCurrentlyUsing';
+        $translationKeys[] = 'CoreHome_WebsiteTime';
+        $translationKeys[] = 'CoreHome_LocalTime';
 
         // add admin menu translations
         if (SettingsPiwik::isMatomoInstalled()

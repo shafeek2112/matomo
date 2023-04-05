@@ -128,6 +128,8 @@
         "VisitorsOverviewHelp": "La \"Visió general dels visitants\" us ajuda a entendre la popularitat del vostre lloc. Ho fa proporcionant gràfics que mostren quantes visites rep el vostre lloc durant un període seleccionat i el nivell mitjà d'interacció amb les funcions clau, com ara cerques i baixades.",
         "WebAnalyticsReports": "Informe d'analítica web",
         "YouAreUsingTheLatestVersion": "Esteu fent servir l'última versió de Matomo!",
-        "YourDonationWillHelp": "La teva donació ajudarà directament a finançar noves funcions i millores per a aquesta plataforma d'anàlisi de codi obert. Això significa que la comunitat sempre es beneficiarà d'una eina que protegeixi la privadesa i us permeti mantenir el control de les vostres dades."
+        "YourDonationWillHelp": "La teva donació ajudarà directament a finançar noves funcions i millores per a aquesta plataforma d'anàlisi de codi obert. Això significa que la comunitat sempre es beneficiarà d'una eina que protegeixi la privadesa i us permeti mantenir el control de les vostres dades.",
+        "WebsiteTime": "Hora del lloc web",
+        "LocalTime": "Hora local"
     }
 }

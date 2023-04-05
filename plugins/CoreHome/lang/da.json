@@ -107,6 +107,8 @@
         "VisitTypeReturningCustomer": "Tilbagevendende kunder",
         "WebAnalyticsReports": "Webanalyse-rapporter",
         "YouAreUsingTheLatestVersion": "Du bruger den seneste version af Matomo!",
-        "YourDonationWillHelp": "Din støtte går direkte til at finansiere nye funktioner og forbedringer for denne open source-statistsystem. Det betyder, at brugerne altid vil have glæde af et værktøj, der respekterer privatliv og lader dig bevare kontrol over dine data."
+        "YourDonationWillHelp": "Din støtte går direkte til at finansiere nye funktioner og forbedringer for denne open source-statistsystem. Det betyder, at brugerne altid vil have glæde af et værktøj, der respekterer privatliv og lader dig bevare kontrol over dine data.",
+        "WebsiteTime": "Hjemmeside tid",
+        "LocalTime": "Lokal tid"
     }
 }

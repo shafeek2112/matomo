@@ -113,6 +113,8 @@
         "VisitTypeReturningCustomer": "Věrný zákazník",
         "WebAnalyticsReports": "Hlášení",
         "YouAreUsingTheLatestVersion": "Používáte nejnovější verzi Matoma.",
-        "YourDonationWillHelp": "Váš dar přímo pomůže financovat nové funkce a vylepšení této analytické platformy s otevřeným zdrojovým kódem. To znamená, že komunita bude vždy těžit z nástroje, který chrání soukromí a umožní vám mít kontrolu nad svými daty."
+        "YourDonationWillHelp": "Váš dar přímo pomůže financovat nové funkce a vylepšení této analytické platformy s otevřeným zdrojovým kódem. To znamená, že komunita bude vždy těžit z nástroje, který chrání soukromí a umožní vám mít kontrolu nad svými daty.",
+        "WebsiteTime" : "Čas webových stránek",
+        "LocalTime": "Místní čas"
     }
 }
